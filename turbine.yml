@@ -8,5 +8,5 @@ server:
 
 turbine:
   aggregator:
-    clusterConfig: ACCOUNT-SERVICE
+    clusterConfig: new String('default')
   appConfig: account-service

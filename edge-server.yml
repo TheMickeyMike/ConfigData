@@ -6,4 +6,4 @@ zuul:
   ignoredServices: "*"
   prefix: /api
   routes:
-  	accounts: /account-service/**
+    accounts: /account-service/**

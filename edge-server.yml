@@ -3,3 +3,4 @@ zuul:
   prefix: /api
   routes:
     account-service: /accounts/**
+    robot-service: /robots/**

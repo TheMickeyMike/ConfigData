@@ -1,5 +1,8 @@
 # Items that apply to ALL profiles:
 eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/

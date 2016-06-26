@@ -36,9 +36,9 @@ spring:
       ddl-auto: create
       show-sql: true
       dialect: org.hibernate.dialect.PostgreSQLDialect
-  h2:
-    console:
-      enabled: true
+  # h2:
+  #   console:
+  #     enabled: true
 
 logging:
   level: debug

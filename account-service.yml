@@ -36,5 +36,8 @@ spring:
     console:
       enabled: true
 
+logging:
+  level: debug
+
 # server:
 #   port: 8002

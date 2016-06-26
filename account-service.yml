@@ -10,6 +10,12 @@ testConfig:
   welcome-msg: Hello
 
 spring:
+  datasource:
+  	url: jdbc:postgresql://localhost:5433/oauth2
+    username: oauth2
+    password: oauth2
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
   jpa:
     hibernate:
       ddl-auto: create
@@ -24,7 +30,7 @@ database:
     url: jdbc:postgresql://localhost:5433/oauth2
     username: oauth2
     password: oauth2
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
     platform: postgresql
 
 

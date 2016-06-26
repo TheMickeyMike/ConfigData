@@ -15,14 +15,17 @@ spring:
       ddl-auto: create
       show-sql: true
       dialect: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
 
-# database:
-#   postgre:
-#     url: jdbc:postgresql://localhost:5433/oauth2
-#     username: oauth2
-#     password: oauth2
-#     driver-class-name: org.postgresql.Driver
-#     platform: postgresql
+database:
+  postgre:
+    url: jdbc:postgresql://localhost:5433/oauth2
+    username: oauth2
+    password: oauth2
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
 
 
 # server:

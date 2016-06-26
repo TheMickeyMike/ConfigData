@@ -24,7 +24,7 @@ database:
     url: jdbc:postgresql://localhost:5433/oauth2
     username: oauth2
     password: oauth2
-    driver-class-name: org.postgresql.Driver
+    driverClassName: org.postgresql.Driver
     platform: postgresql
 
 

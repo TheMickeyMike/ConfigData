@@ -1,0 +1,40 @@
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+
+testConfig:
+  welcome-msg: Hello
+
+
+database:
+  postgre:
+    url: jdbc:postgresql://localhost:5433/USERS
+    username: USER-SERVICE
+    password: user-service
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
+  mysql:
+    url: jdbc:mysql://localhost:3306/oauth2?autoReconnect=true&useSSL=false&&serverTimezone=UTC
+    username: oauth2
+    password: Oauth2
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+
+
+spring:
+  cloud:
+      consul:
+        discovery:
+          instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  jpa:
+    hibernate:
+      ddl-auto: create
+      show-sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  # h2:
+  #   console:
+  #     enabled: true
+
+
+# server:
+#   port: 8002

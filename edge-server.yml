@@ -4,8 +4,10 @@ zuul:
   routes:
     account-service:
       path: /accounts/**
+      stripPrefix: false
     robot-service: 
       path:/robots/**
+      stripPrefix: false
 spring:
   cloud:
     consul:

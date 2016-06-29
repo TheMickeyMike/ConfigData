@@ -2,13 +2,8 @@ zuul:
   ignoredServices: "*"
   prefix: /api
   routes:
-    account-service: 
-    	path: /accounts/**
-    	stripPrefix: false
-    robot-service: 
-    	path: /robots/**
-    	stripPrefix: false
-
+    account-service: /accounts/**
+    robot-service: /robots/**
 spring:
   cloud:
     consul:

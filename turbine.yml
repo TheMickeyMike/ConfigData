@@ -5,7 +5,7 @@ applications: account-service,robot-service
 turbine:
   aggregator:
     clusterConfig: ${applications}
-  	appConfig: ${applications}
+    appConfig: ${applications}
 
 spring:
   cloud:

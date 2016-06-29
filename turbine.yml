@@ -6,4 +6,4 @@ turbine:
     clusterConfig: MYCLUSTER
   appConfig: account-service,robot-service
   # clusterNameExpression: "'default'"
-  combineHostPort: true
+  # combineHostPort: true

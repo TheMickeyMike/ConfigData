@@ -3,13 +3,6 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
-spring:
-  cloud:
-    consul:
-      discovery:
-        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-        healthCheckInterval: 15s
-
 server:
   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 

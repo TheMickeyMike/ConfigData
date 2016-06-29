@@ -12,9 +12,4 @@ zuul:
     post:
       disable: true
 
-spring:
-  cloud:
-    consul:
-      discovery:
-        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-        healthCheckInterval: 15s
+

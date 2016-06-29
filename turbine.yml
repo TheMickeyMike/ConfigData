@@ -1,8 +1,9 @@
 # server:
 #   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 
-applications: account-service, robot-service
 turbine:
   aggregator:
-    clusterConfig: ${applications}
-  appConfig: ${applications}
+    clusterConfig: MYCLUSTER
+  appConfig: account-service,robot-service
+  clusterNameExpression: "'default'"
+  combineHostPort: true

@@ -6,7 +6,7 @@ zuul:
       path: /accounts/**
       stripPrefix: false
     robot-service: 
-      path:/robots/**
+      path: /robots/**
       stripPrefix: false
 spring:
   cloud:

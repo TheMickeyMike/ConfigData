@@ -26,6 +26,7 @@ spring:
       consul:
         discovery:
           instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+           healthCheckInterval: 15s
   jpa:
     hibernate:
       ddl-auto: create

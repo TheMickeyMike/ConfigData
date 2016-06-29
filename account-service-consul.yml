@@ -33,8 +33,6 @@ spring:
       ddl-auto: create
       show-sql: true
       dialect: org.hibernate.dialect.PostgreSQLDialect
-  jersey:
-    application-path: /apis
   # h2:
   #   console:
   #     enabled: true

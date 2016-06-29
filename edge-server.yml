@@ -8,6 +8,10 @@ zuul:
     robot-service: 
       path: /robots/**
       stripPrefix: false
+  SendErrorFilter:
+    post:
+      disable: true
+
 spring:
   cloud:
     consul:

@@ -26,7 +26,7 @@ spring:
       consul:
         discovery:
           instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-          healthCheckPath: ${management.contextPath}/health
+          # healthCheckPath: ${management.contextPath}/health
           healthCheckInterval: 15s
   jpa:
     hibernate:

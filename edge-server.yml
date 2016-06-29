@@ -4,3 +4,10 @@ zuul:
   routes:
     account-service: /accounts/**
     robot-service: /robots/**
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        healthCheckInterval: 15s

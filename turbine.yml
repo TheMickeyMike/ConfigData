@@ -5,5 +5,5 @@ turbine:
   aggregator:
     clusterConfig: MYCLUSTER
   appConfig: account-service,robot-service
-  clusterNameExpression: "'default'"
+  # clusterNameExpression: "'default'"
   combineHostPort: true

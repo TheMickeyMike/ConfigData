@@ -8,9 +8,9 @@ zuul:
     robot-service: 
       path: /robots/**
       stripPrefix: false
-  # SendErrorFilter:
-  #   post:
-  #     disable: true
+  SendErrorFilter:
+    post:
+      disable: true
 
 spring:
   cloud:

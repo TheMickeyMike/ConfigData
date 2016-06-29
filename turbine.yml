@@ -1,7 +1,15 @@
 # server:
 #   port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
 
+applications: account-service,robot-service
 turbine:
   aggregator:
-    clusterConfig: eureka-server
-  appConfig: account-service
+    clusterConfig: ${applications}
+  	appConfig: ${applications}
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        healthCheckInterval: 10s

@@ -8,3 +8,9 @@ server:
 
 testConfig:
   welcome-msg: Hello Robot
+
+spring:
+  cloud:
+    config:
+      failFast: true
+

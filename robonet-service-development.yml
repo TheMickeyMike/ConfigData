@@ -11,9 +11,3 @@ spring:
     config:
       failFast: true
 
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: create
-      show-sql: true
-      dialect: org.hibernate.dialect.PostgreSQLDialect

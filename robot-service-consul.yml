@@ -14,3 +14,17 @@ spring:
     config:
       failFast: true
 
+database:
+  postgre:
+    url: jdbc:postgresql://localhost:5433/USERS
+    username: USER-SERVICE
+    password: user-service
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
+  mysql:
+    url: jdbc:mysql://localhost:3306/oauth2?autoReconnect=true&useSSL=false&&serverTimezone=UTC
+    username: oauth2
+    password: Oauth2
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+

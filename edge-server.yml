@@ -8,6 +8,9 @@ zuul:
     robot-service: 
       path: /robots/**
       stripPrefix: false
+    auth-server:
+      path: /oauth/**
+      stripPrefix: false
   SendErrorFilter:
     post:
       disable: true

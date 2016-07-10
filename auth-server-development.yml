@@ -11,3 +11,7 @@ spring:
     config:
       failFast: true
 
+
+security: 
+  user: password=password
+

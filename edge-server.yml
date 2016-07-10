@@ -10,6 +10,7 @@ zuul:
       stripPrefix: false
     auth-server:
       path: /oauth/**
+      sensitiveHeaders: Authorization
       stripPrefix: false
   SendErrorFilter:
     post:

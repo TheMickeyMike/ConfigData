@@ -16,9 +16,9 @@ spring:
 
 database:
   postgre:
-    url: jdbc:postgresql://localhost:5432/USERS
-    username: USER-SERVICE
-    password: user-service
+    url: jdbc:postgresql://localhost:5432/users
+    username: userservice
+    password: userservicepass
     driver-class-name: org.postgresql.Driver
     platform: postgresql
   mysql:

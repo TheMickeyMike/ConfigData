@@ -4,14 +4,6 @@ server:
 testConfig:
   welcome-msg: Hello
 
-spring:
-  cloud:
-    #RabbitMQ
-    rabbitmq:
-       addresses: localhost:5672
-       username: test
-       password: test
-       virtual_host: /
 
 database:
   postgre:

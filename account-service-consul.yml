@@ -7,7 +7,7 @@ testConfig:
 
 database:
   postgre:
-    url: jdbc:postgresql://localhost:5432/USERS
+    url: jdbc:postgresql://localhost:5432/users
     username: userservice
     password: userservicepass
     driver-class-name: org.postgresql.Driver

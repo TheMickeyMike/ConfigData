@@ -1,0 +1,34 @@
+# Allow Eureka to recognize two apps of the same type on the same host as separate instances:
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+
+spring:
+  cloud:
+    config:
+      failFast: true
+  jpa:
+      hibernate:
+        ddl-auto: validate
+        connection:
+          CharSet: utf8
+          characterEncoding: utf8
+          useUnicode: true
+      show-sql: true
+
+
+database:
+  postgre:
+    url: jdbc:postgresql://localhost:5432/oauth
+    username: oauth
+    password: oauth
+    driver-class-name: org.postgresql.Driver
+    platform: postgresql
+    data: oauth.sql
+
+
+keystore:
+  password: jvkEa89en6jN7KkQ

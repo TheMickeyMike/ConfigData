@@ -2,18 +2,18 @@ zuul:
   ignoredServices: "*"
   prefix: /api
   routes:
-    oauth-account-service:
+    account-service:
       path: /accounts/**
+      sensitiveHeaders:
       stripPrefix: false
-    oauth-account-service:
+      serviceId: oauth-account-service
+    oauth-service:
       path: /oauth/**
       stripPrefix: false
+      sensitiveHeaders:
+      serviceId: oauth-account-service
     robot-service: 
       path: /robots/**
-      stripPrefix: false
-    auth-server:
-      path: /oauth/**
-      sensitiveHeaders:
       stripPrefix: false
   SendErrorFilter:
     post:

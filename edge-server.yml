@@ -2,8 +2,11 @@ zuul:
   ignoredServices: "*"
   prefix: /api
   routes:
-    account-service:
+    oauth-account-service:
       path: /accounts/**
+      stripPrefix: false
+    oauth-account-service:
+      path: /oauth/**
       stripPrefix: false
     robot-service: 
       path: /robots/**

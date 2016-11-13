@@ -6,12 +6,12 @@ zuul:
       path: /accounts/**
       sensitiveHeaders:
       stripPrefix: false
-      serviceId: oauth-account-service
+      serviceId: service-account
     oauth-service:
       path: /oauth/**
       stripPrefix: false
       sensitiveHeaders:
-      serviceId: oauth-account-service
+      serviceId: service-auth
     robot-service: 
       path: /robots/**
       stripPrefix: false

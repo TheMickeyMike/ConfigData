@@ -6,12 +6,16 @@
 spring:
   cloud:
     consul:
+      host: consul
+      port: 8500
       discovery:
         instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
         healthCheckInterval: 10s
+        prefer-ip-address: true
     #RabbitMQ
-    rabbitmq:
-       addresses: localhost:5672
-       username: test
-       password: test
-       virtual_host: /
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: test
+    password: test
+      # virtual_host: /

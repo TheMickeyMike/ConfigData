@@ -1,0 +1,17 @@
+# Items that apply to ALL profiles:
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8010/eureka/
+spring:
+  cloud:
+    consul:
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        healthCheckInterval: 10s
+    #RabbitMQ
+    rabbitmq:
+       addresses: localhost:5672
+       username: test
+       password: test
+       virtual_host: /

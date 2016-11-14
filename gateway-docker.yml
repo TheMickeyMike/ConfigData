@@ -1,0 +1,22 @@
+zuul:
+  ignoredServices: "*"
+  prefix: /api
+  routes:
+    account-service:
+      path: /accounts/**
+      sensitiveHeaders:
+      stripPrefix: false
+      serviceId: service-account
+    oauth-service:
+      path: /oauth/**
+      stripPrefix: false
+      sensitiveHeaders:
+      serviceId: service-auth
+    robot-service: 
+      path: /robots/**
+      stripPrefix: false
+  SendErrorFilter:
+    post:
+      disable: true
+
+

@@ -1,0 +1,20 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}   # Select any available port if neither port nor server port are specified.
+
+# Hibernate
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+###
+# Data Source Configuration
+###
+database:
+  postgre:
+    url: jdbc:postgresql://localhost:5432/oauth
+    username: oauth
+    password: oauth
+    driver-class-name: org.postgresql.Driver
+    initialize: true

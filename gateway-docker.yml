@@ -15,8 +15,13 @@ zuul:
     robot-service: 
       path: /robots/**
       stripPrefix: false
+      sensitiveHeaders:
+      serviceId: service-robot
+    tinder-service:
+      path: /tinder/**
+      stripPrefix: false
+      sensitiveHeaders:
+      serviceId: service-tinder-robot
   SendErrorFilter:
     post:
       disable: true
-
-

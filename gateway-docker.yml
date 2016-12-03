@@ -22,6 +22,11 @@ zuul:
       stripPrefix: false
       sensitiveHeaders:
       serviceId: service-tinder-robot
+    games-service:
+      path: /games/**
+      stripPrefix: false
+      sensitiveHeaders:
+      serviceId: service-games
   SendErrorFilter:
     post:
       disable: true
